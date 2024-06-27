@@ -8,3 +8,7 @@ function capturarValores() {
 
 let sentencas = 'Meu nome é Deborah; eu adoro resolver desafios em javascript.';
 console.log(sentencas.split(';'));
+
+let numeros = '1,2,3,4,5,6';
+let listaNumeros = numeros.split(',');
+console.log(listaNumeros);
