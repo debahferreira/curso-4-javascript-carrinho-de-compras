@@ -5,3 +5,6 @@ function capturarValores() {
 
     frase.textContent = `Seu nome é ${nome} e sua idade é ${idade}.`;
 }
+
+let sentencas = 'Meu nome é Deborah; eu adoro resolver desafios em javascript.';
+console.log(sentencas.split(';'));
