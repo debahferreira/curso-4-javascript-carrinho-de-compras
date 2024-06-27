@@ -11,10 +11,14 @@ function adicionar() {
     let valorProduto = produto.split('R$') [1];
     let nomeProduto = produto.split('-') [0];
 
+    if(quantidadeProduto.value > 0) {
     listaProdutos.innerHTML = listaProdutos.innerHTML + `<section class="carrinho__produtos__produto">
           <span class="texto-azul">${quantidadeProduto.value}x</span> ${nomeProduto} <span class="texto-azul">R$${valorProduto}</span>
         </section>`;
     valorTotal.textContent = `R$${parseInt(valorTotal.textContent.split('$')[1]) + (valorProduto * quantidadeProduto.value)}`;
+    } else {
+        alert(`Por favor, insira a quantidade do produto que deseja adquirir.`);
+    }
 }
 
 function limpar() {
